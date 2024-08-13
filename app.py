@@ -88,7 +88,7 @@ def criar_nota_fiscal(nome_cliente, itens, valor_total):
 
     # Adicionar logo
     try:
-        logo = Image.open("images/logo.png")  # Substitua "logo.png" pelo caminho da sua imagem de logo
+        logo = Image.open("images/logo.png")  # Logo
         logo = logo.resize((200, 100))  # Redimensionar se necessário
         img.paste(logo, (200, 20), logo)
     except FileNotFoundError:
